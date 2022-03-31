@@ -73,6 +73,35 @@ let massPopChart = new Chart(myChart, {
         hoverBorderColor: "yellow",
       },
     ],
-    options: { title: { display: true, text: "monfaredman is run" } },
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Chart Title",
+      },
+      legend: {
+        position: "right",
+        labels: {
+          fontColor: "brown",
+        },
+      },
+      layout: {
+        padding: {
+          left: 20,
+          right: 0,
+          bottom: 0,
+          top: 0,
+        },
+      },
+    },
+    // scales: {
+    //   x: {
+    //     type: "linear",
+    //   },
+    //   y: {
+    //     type: "linear",
+    //   },
+    // },
   },
 });
